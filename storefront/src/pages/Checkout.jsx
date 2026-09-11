@@ -314,7 +314,11 @@ const Checkout = () => {
                             {t('checkout.emailNoteTitle') || (lang === 'en' ? 'Check your inbox' : 'Kiểm tra hộp thư của bạn')}
                         </h4>
                         <p className="mt-1 text-sm leading-relaxed text-ink/75">
-                            {t('checkout.emailNoteDesc') || (lang === 'en' ? "We've sent an order confirmation email. You will also receive a shipping update with a tracking number once your order is on its way." : 'Chúng tôi đã gửi email xác nhận đơn hàng. Bạn cũng sẽ nhận được email thông báo kèm mã vận đơn khi đơn hàng bắt đầu được giao.')}
+                            {t('checkout.emailNoteDesc') || (lang === 'en' ? "We've sent an order confirmation email." : 'Chúng tôi đã gửi email xác nhận đơn hàng.')}
+                            {' '}
+                            <strong className="font-bold text-red-600">
+                                {t('checkout.emailNoteDesc2') || (lang === 'en' ? 'You will also receive a shipping update with a tracking number once your order is on its way.' : 'Bạn cũng sẽ nhận được email thông báo kèm mã vận đơn khi đơn hàng bắt đầu được giao.')}
+                            </strong>
                         </p>
                     </div>
                 </div>
