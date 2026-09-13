@@ -25,9 +25,9 @@ const app = express();
 // Danh sách các domain được phép gọi API
 const allowedOrigins = [
   "http://localhost:5173",                 // Localhost của bạn
-  "https://brown-website-dcmd.vercel.app",      // Domain Vercel (sắp có)
-  "https://brownvn.com"//,              Tên miền thật (nếu mua)
-  //"https://www.brown-fashion.com"
+  "https://brown-website.vercel.app",      // Domain Vercel
+  "https://brownvn.com",
+  "https://www.brownvn.com"
 ];
 
 app.use(cors({

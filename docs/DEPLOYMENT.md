@@ -12,7 +12,7 @@ Hướng dẫn đưa hệ thống BROWN lên môi trường production.
 | Ảnh | Cloudinary |
 | Email | Resend |
 
-Domain production hiện tại: `https://brownvn.com` (và bản Vercel `https://brown-website-dcmd.vercel.app`).
+Domain production hiện tại: `https://brownvn.com` (và bản Vercel `https://brown-website.vercel.app`).
 
 ## 2. Triển khai Frontend
 
@@ -46,8 +46,9 @@ Sau khi có domain production, thêm domain vào `allowedOrigins` trong [`server
 ```js
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://brown-website-dcmd.vercel.app",
-  "https://brownvn.com"
+  "https://brown-website.vercel.app",
+  "https://brownvn.com",
+  "https://www.brownvn.com"
 ];
 ```
 
